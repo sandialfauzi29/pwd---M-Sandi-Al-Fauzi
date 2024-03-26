@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;  
+}
+.main {
+    width: 100%;
+    height: 100vh;
+    /* background-color: aqua; */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("lazada.jpeg");
+    background-size: 100%;
+    background-position: center;
+    margin-top: -7vh;
+    
+}
+
+
+.navbar{
+    width: 100%;
+    height: 10vh;
+    margin: auto;
+    position: fixed;
+    background-color: orange;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    font-size: 36px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    width: 120px;
+    cursor: pointer;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a{
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: rgb(255, 255, 255)  ;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+
+}
+
+.footer{
+    position: absolute;
+    bottom: 50;
+}
+
+.footer{
+    background-color: rgb(18, 64, 118);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 50px 50px 60px 50px;
+    margin-top: 0px;
+
+}
+
+.footer .footer-left,
+.footer .footer-center,
+.footer ,footer-right{
+    display: inline-block;
+    vertical-align: top;
+
+}
+
+@media (max-height:800px){
+    footer{
+        position: static;
+    }
+    header{
+        padding-top: 40px;
+    }
+}
+
+.footer .footer-left{
+    width: 30%;
+
+}
+
+.footer h3{
+    color: aliceblue;
+    margin: 0;
+    padding-bottom: 20px;
+    font-family: Georgia,'Times New Roman', Times, serif;
+}
+
+.footer .footer-left img {
+    width: 30px;
+    vertical-align: middle;
+
+}
+
+/* .footer .footer-left .credit-cards{
+    width: 100%;
+} */
